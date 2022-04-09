@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.effect.InnerShadow?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane onMouseEntered="#onEnterButtonAction" onMouseExited="#onExitButtonAction" prefHeight="500.0" prefWidth="500.0" style="-fx-background-color: black; -fx-background-radius: 0;" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.LoginMenu">
+   <children>
+      <TextField fx:id="UsernameTextFieldLoginMenu" alignment="CENTER" layoutX="158.0" layoutY="55.0" prefHeight="31.0" prefWidth="184.0" promptText="Enter Username:">
+         <effect>
+            <InnerShadow blurType="GAUSSIAN" choke="0.35" color="#fdd62b" />
+         </effect>
+      </TextField>
+      <PasswordField fx:id="PasswordTextFieldLoginMenu" alignment="CENTER" layoutX="158.0" layoutY="107.0" prefHeight="31.0" prefWidth="184.0" promptText="Enter Password:">
+         <effect>
+            <InnerShadow choke="0.2" color="#fdd62b" />
+         </effect>
+      </PasswordField>
+      <Button fx:id="LoginButtonLoginMenu" layoutX="150.0" layoutY="181.0" mnemonicParsing="false" onMouseClicked="#changeToMainMenu" onMouseEntered="#onEnterButtonAction" onMouseExited="#onExitButtonAction" prefHeight="200.0" prefWidth="200.0" style="-fx-background-radius: 100; -fx-background-color: rgba(253, 214, 43, 1);" text="Login">
+         <font>
+            <Font name="Segoe Print Bold" size="47.0" />
+         </font>
+      </Button>
+      <Button fx:id="BackButtonLoginMenu" layoutX="14.0" layoutY="442.0" mnemonicParsing="false" onMouseClicked="#changeToEntryMenu" onMouseEntered="#onEnterButtonAction" onMouseExited="#onExitButtonAction" prefHeight="39.0" prefWidth="86.0" style="-fx-background-radius: 20; -fx-background-color: rgba(253, 214, 43, 1);" text="Back">
+         <font>
+            <Font name="Comic Sans MS Bold" size="18.0" />
+         </font>
+      </Button>
+   </children>
+</AnchorPane>

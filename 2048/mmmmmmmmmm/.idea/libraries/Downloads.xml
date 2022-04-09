@@ -1,0 +1,17 @@
+<component name="libraryTable">
+  <library name="Downloads" type="kotlin.js">
+    <CLASSES>
+      <root url="file://$USER_HOME$/Downloads" />
+      <root url="jar://$USER_HOME$/Downloads/kotlin-stdlib-1.3.31.jar!/" />
+      <root url="jar://$USER_HOME$/Downloads/kotlin-stdlib-common-1.3.31.jar!/" />
+      <root url="jar://$USER_HOME$/Downloads/annotations-13.0.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES>
+      <root url="file://$USER_HOME$/Downloads" />
+      <root url="jar://$USER_HOME$/Downloads/kotlin-stdlib-1.3.31.jar!/" />
+      <root url="jar://$USER_HOME$/Downloads/kotlin-stdlib-common-1.3.31.jar!/" />
+      <root url="jar://$USER_HOME$/Downloads/annotations-13.0.jar!/" />
+    </SOURCES>
+  </library>
+</component>

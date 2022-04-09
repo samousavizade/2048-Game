@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.effect.Blend?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.RowConstraints?>
+<?import javafx.scene.text.Font?>
+
+<GridPane alignment="center" hgap="10" vgap="10" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.EntryMenu">
+    <children>
+        <AnchorPane prefHeight="500.0" prefWidth="500.0" style="-fx-background-color: black;">
+            <effect>
+                <Blend />
+            </effect>
+            <children>
+                <Button fx:id="PlayButtonEntryMenu" layoutX="125.0" layoutY="125.0" mnemonicParsing="false" onMouseClicked="#changeToLoginMenu" onMouseEntered="#onEnterButtonAction" onMouseExited="#onExitButtonAction" prefHeight="250.0" prefWidth="250.0" style="-fx-background-radius: 200; -fx-background-color: rgba(253, 214, 43, 1);" text="Play">
+                    <font>
+                        <Font name="Segoe Print Bold" size="70.0" />
+                    </font></Button>
+                <Button fx:id="RegisterButtonEntryMenu" layoutX="62.0" layoutY="315.0" mnemonicParsing="false" onMouseClicked="#changeToRegisterMenu" onMouseEntered="#rotate" onMouseExited="#rotateOff" prefHeight="59.0" prefWidth="126.0" style="-fx-background-radius: 30; -fx-background-color: rgba(253, 214, 43, 1);" text="Register" textAlignment="RIGHT">
+                    <font>
+                        <Font name="Comic Sans MS Bold" size="23.0" />
+                    </font></Button>
+                <Button fx:id="ExitButtonEntryMenu" layoutX="312.0" layoutY="315.0" mnemonicParsing="false" onMouseClicked="#exit" onMouseEntered="#rotate" onMouseExited="#rotateOff" prefHeight="59.0" prefWidth="126.0" style="-fx-background-radius: 200; -fx-background-color: rgba(253, 214, 43, 1);" text="Exit">
+                    <font>
+                        <Font name="Comic Sans MS Bold" size="26.0" />
+                    </font></Button>
+            <Button fx:id="RankButtonEntryMenu" layoutX="312.0" layoutY="125.0" mnemonicParsing="false" onMouseClicked="#changeToRankedMenu" onMouseEntered="#rotate" onMouseExited="#rotateOff" prefHeight="59.0" prefWidth="126.0" style="-fx-background-radius: 200; -fx-background-color: rgba(253, 214, 43, 1);" text="Rank">
+               <font>
+                  <Font name="Comic Sans MS Bold" size="29.0" />
+               </font>
+            </Button>
+            </children>
+        </AnchorPane>
+    </children>
+    <rowConstraints>
+        <RowConstraints />
+    </rowConstraints>
+    <columnConstraints>
+        <ColumnConstraints />
+    </columnConstraints>
+</GridPane>
